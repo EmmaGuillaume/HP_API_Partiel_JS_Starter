@@ -231,6 +231,23 @@ a {
 .page_perso .house__perso img {
   width: 30%;
 }
+.filtres{
+  margin-top: 3vh;
+}
+.filtres button {
+  border-radius: 5px;
+  padding: 1vh 2vw;
+  text-align: center;
+  background-color: rgba(185, 144, 73, 0.5);;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.filtres button:hover {
+  background-color: rgba(185, 144, 73, 0.7);
+}
+
 
 @media (max-width: 900px) {
   .characters {
