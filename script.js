@@ -7,22 +7,10 @@ const allData = await fetch(`https://hp-api.onrender.com/api/characters`)
 
 const data = allData.slice(0, 12);
 const housesNamesList = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
-console.log(data);
-
-
-const paramsString = "q=URLUtils.searchParams&topic=api";
-const searchParams = new URLSearchParams(paramsString);
-
-// Iterating the search parameters
-for (const p of searchParams) {
-  console.log(p);
-}
-
 
 
 const filterByHouse = (house) => {
   let filteredList = data.filter((character) => character.house === house);
-  console.log(filteredList, house);
 
   return filteredList;
 };

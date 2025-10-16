@@ -8,7 +8,7 @@ const characterRequest = await fetch(
   .catch((error) => alert("Erreur : " + error));
 
 const character = characterRequest[0];
-console.log(character);
+
 
 const renderCharactersList = (character) => {
   let section = document.createElement("section");
