@@ -7,6 +7,18 @@ const allData = await fetch(`https://hp-api.onrender.com/api/characters`)
 
 const data = allData.slice(0, 12);
 const housesNamesList = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"];
+console.log(data);
+
+
+const paramsString = "q=URLUtils.searchParams&topic=api";
+const searchParams = new URLSearchParams(paramsString);
+
+// Iterating the search parameters
+for (const p of searchParams) {
+  console.log(p);
+}
+
+
 
 const filterByHouse = (house) => {
   let filteredList = data.filter((character) => character.house === house);
@@ -36,10 +48,10 @@ const renderCharactersList = (data) => {
   data.forEach((character) => {
     let characterDiv = document.createElement("article");
     characterDiv.innerHTML = `
-        <div class=${character.house.toLowerCase()}>
+        <a href="./details.html?id=${character.id}" class=${character.house.toLowerCase()}>
             <img src="${character.image}" alt="${character.name}" />
             <p>${character.name}</p>
-          </div>
+          </a>
         `;
 
     charactersList.appendChild(characterDiv);

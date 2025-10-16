@@ -109,8 +109,6 @@ footer p {
   flex-wrap: wrap;
 }
 
-
-
 .houses > button {
   border-radius: 140px;
   width: 140px;
@@ -135,14 +133,13 @@ footer p {
   align-items: start;
 }
 
-/* responsive fallback */
 
-@media (max-width: 425px) {
-  
+a {
+  text-decoration: none;
 }
 
-.characters > div {
-  padding: 30px;
+.characters > article {
+  padding: 10px;
 }
 .characters img {
   width: 150px;
@@ -296,8 +293,8 @@ footer p {
   }
 
   .page_perso .house__perso img {
-  width: 60%;
-}
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
