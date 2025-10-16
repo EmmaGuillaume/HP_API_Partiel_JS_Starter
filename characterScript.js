@@ -52,7 +52,7 @@ const renderCharactersList = (character) => {
             </div>
         </div>
         `;
-  section.classList.add("house__person");
+  sectionHouse.classList.add("house__person");
   sectionHouse.innerHTML = `
         <img src="./images/logo/${capitalizedHouse}.png" alt="" srcset="" />`;
 
