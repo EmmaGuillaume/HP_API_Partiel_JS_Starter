@@ -129,7 +129,6 @@ footer p {
   padding: 30px;
 }
 
-
 .characters > div {
   padding: 30px;
 }
@@ -138,7 +137,8 @@ footer p {
   height: 150px;
   border-radius: 150px;
   border: 8px solid var(--Gold, #b99049);
-  background: url(<path-to-image>), lightgray -1.24px 0px/101.653% 141.566% no-repeat;
+  background: url(<path-to-image>),
+    lightgray -1.24px 0px/101.653% 141.566% no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   object-fit: cover;
 }
@@ -146,33 +146,31 @@ footer p {
   text-align: center;
   color: var(--Gold, #b99049);
   font-weight: bold;
-
 }
-
 
 .characters .gryffindor:hover img {
-   border: 8px solid var(--Gold, rgba(183, 23, 19, 1));
+  border: 8px solid var(--Gold, rgba(183, 23, 19, 1));
 }
 .characters .gryffindor:hover p {
-   color :  rgba(183, 23, 19, 1);
+  color: rgba(183, 23, 19, 1);
 }
 .characters .slytherin:hover img {
-   border: 8px solid var(--Gold, rgba(18, 75, 16, 1));
+  border: 8px solid var(--Gold, rgba(18, 75, 16, 1));
 }
 .characters .slytherin:hover p {
-   color :  rgba(18, 75, 16, 1);
+  color: rgba(18, 75, 16, 1);
 }
 .characters .ravenclaw:hover img {
-   border: 8px solid var(--Gold, rgba(7, 140, 177, 1));
+  border: 8px solid var(--Gold, rgba(7, 140, 177, 1));
 }
 .characters .ravenclaw:hover p {
-   color:  rgba(7, 140, 177, 1);
+  color: rgba(7, 140, 177, 1);
 }
 .characters .hufflepuff:hover img {
-   border: 8px solid var(--Gold, rgba(225, 181, 12, 1));
+  border: 8px solid var(--Gold, rgba(225, 181, 12, 1));
 }
 .characters .hufflepuff:hover p {
-   color: rgba(225, 181, 12, 1);
+  color: rgba(225, 181, 12, 1);
 }
 
 /* PAGE PERSO */
@@ -192,10 +190,12 @@ footer p {
 }
 .page_perso .perso__right > div {
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  text-align: left;
 }
 .page_perso .perso__right p.attr {
   font-weight: bold;
+  width: 30%;
 }
 .page_perso figure {
   width: 215px;
@@ -216,6 +216,11 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4vh 0;
+}
+
+.page_perso .house__perso img {
+  width: 30%;
 }
 
 @media screen and (max-width: 425px) {
@@ -223,7 +228,7 @@ footer p {
     width: 90%;
   }
   header h1,
-header ul {
+  header ul {
     display: none !important;
   }
   header .header__left {
@@ -239,6 +244,38 @@ header ul {
     flex-direction: column;
     align-content: space-around;
   }
+
+  .page_perso .perso {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page_perso .perso__left {
+    margin: 0;
+  }
+
+  .page_perso .perso__right {
+    gap: 4vh;
+    align-items: center;
+    margin-top: 10vh;
+  }
+
+  .page_perso .perso__right p.attr {
+    width: auto;
+    font-weight: normal;
+  }
+
+  .page_perso .perso__right p.data {
+    font-weight: bold;
+  }
+  .page_perso .perso__right div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page_perso .house__perso img {
+  width: 60%;
+}
 }
 
 /*# sourceMappingURL=style.css.map */
