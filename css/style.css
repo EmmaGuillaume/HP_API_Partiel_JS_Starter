@@ -128,6 +128,8 @@ footer p {
   flex-wrap: wrap;
   padding: 30px;
 }
+
+
 .characters > div {
   padding: 30px;
 }
@@ -145,6 +147,32 @@ footer p {
   color: var(--Gold, #b99049);
   font-weight: bold;
 
+}
+
+
+.characters .gryffindor:hover img {
+   border: 8px solid var(--Gold, rgba(183, 23, 19, 1));
+}
+.characters .gryffindor:hover p {
+   color :  rgba(183, 23, 19, 1);
+}
+.characters .slytherin:hover img {
+   border: 8px solid var(--Gold, rgba(18, 75, 16, 1));
+}
+.characters .slytherin:hover p {
+   color :  rgba(18, 75, 16, 1);
+}
+.characters .ravenclaw:hover img {
+   border: 8px solid var(--Gold, rgba(7, 140, 177, 1));
+}
+.characters .ravenclaw:hover p {
+   color:  rgba(7, 140, 177, 1);
+}
+.characters .hufflepuff:hover img {
+   border: 8px solid var(--Gold, rgba(225, 181, 12, 1));
+}
+.characters .hufflepuff:hover p {
+   color: rgba(225, 181, 12, 1);
 }
 
 /* PAGE PERSO */
