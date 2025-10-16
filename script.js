@@ -29,7 +29,6 @@ const filterByDead= () => {
   let filteredList = data.filter((character) => character.alive === false);
   return filteredList;
 };
-console.log(data)
 
 const renderCharactersList = (data) => {
   if (filtresList.childElementCount === 0) {
