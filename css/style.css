@@ -105,7 +105,7 @@ footer p {
   display: flex;
   justify-content: space-around;
   background: rgba(185, 144, 73, 0.5);
-  padding: 30px;
+  padding: 30px 10vw;
   flex-wrap: wrap;
 }
 .houses > div {
@@ -143,6 +143,8 @@ footer p {
 .characters p {
   text-align: center;
   color: var(--Gold, #b99049);
+  font-weight: bold;
+
 }
 
 /* PAGE PERSO */
